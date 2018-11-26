@@ -17,7 +17,7 @@ class FileServiceTest {
 	@Test
 	void getAllFiles() {
 		List<File> res = FileService.getAllFiles(root);
-		Assert.assertEquals(res.size(), 7);
+		Assert.assertEquals(res.size(), 8);
 	}
 	
 	@Test
