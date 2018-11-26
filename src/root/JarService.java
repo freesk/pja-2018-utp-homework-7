@@ -32,7 +32,7 @@ public class JarService {
 			.collect(Collectors.toList());
 	}
 	
-	public static List<File> getFilesByNameNonParalell(String path, String name) throws IOException {
+	public static List<File> getFilesByNameNonParallel(String path, String name) throws IOException {
 		
 		JarFile jarFile = new JarFile(path);
 		
@@ -72,7 +72,7 @@ public class JarService {
 	            .collect(Collectors.toList());
 	}
 	
-	public static List<File> getFilesByContentNonParalell(String path, String content) throws IOException {
+	public static List<File> getFilesByContentNonParallel(String path, String content) throws IOException {
 		JarFile jarFile = new JarFile(path);
 
 	    return jarFile.stream()
@@ -96,7 +96,7 @@ public class JarService {
 	            .collect(Collectors.toList());
 	}
 	
-	public static List<File> getFilesByContentNonParalell(String path, File file) throws IOException {
+	public static List<File> getFilesByContentNonParallel(String path, File file) throws IOException {
 		JarFile jarFile = new JarFile(path);
 
 	    return jarFile.stream()
